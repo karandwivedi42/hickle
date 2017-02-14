@@ -1,3 +1,7 @@
+#### Fork info
+
+Works with python 3
+
 [![Build Status](https://travis-ci.org/telegraphic/hickle.svg?branch=master)](https://travis-ci.org/telegraphic/hickle)
 
 Hickle
@@ -118,8 +122,8 @@ hkl.dump(array_obj, 'test.hkl', mode='w')
 hkl.dump(array_obj, 'test_gzip.hkl', mode='w', compression='gzip')
   
 # Compare filesizes
-print 'uncompressed: %i bytes' % os.path.getsize('test.hkl')
-print 'compressed:   %i bytes' % os.path.getsize('test_gzip.hkl')
+print ('uncompressed: %i bytes' % os.path.getsize('test.hkl'))
+print ('compressed:   %i bytes' % os.path.getsize('test_gzip.hkl'))
     
 # Load data
 array_hkl = hkl.load('test_gzip.hkl')
